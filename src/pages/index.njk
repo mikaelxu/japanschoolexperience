@@ -1,11 +1,8 @@
 ---
 layout: base
 permalink: /index.html
-title: 'Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
-blog:
-  title: 'Blog'
-  intro: "I'm showing the last 4 blog posts, but there might be more!"
+title: 'Japan School Experience'
+description: 'Immerse yourself in Japanese education and culture through our comprehensive school exchange program.'
 ---
 
 <div class="wrapper">
@@ -18,36 +15,41 @@ blog:
 
   <article class="full | region">
     <div class="wrapper flow prose">
-      <h2 id="an-eleventy-starter">An Eleventy starter</h2>
+      <h2 id="experience-japanese-education">Experience Japanese Education</h2>
       <p>
-        Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It
-        incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for
-        layout. The goal is to develop frontends that provide a great experience across all devices,
-        connection speeds, and usage contexts.
+        Join our comprehensive school exchange program and immerse yourself in the rich culture and educational system of Japan. 
+        Live with host families, attend local schools, and develop lifelong connections while experiencing authentic Japanese life.
       </p>
       <p>
-        <strong>This is <a href="https://github.com/madrilene/eleventy-excellent/">version 4</a>.</strong> I keep a
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v1">branch of v1</a>,
-        <a href="https://github.com/madrilene/eleventy-excellent/tree/v2">v2</a> and <a href="https://github.com/madrilene/eleventy-excellent/tree/v3">v3</a>. I  tried to <a href="/get-started/#docs-lol">document most features and methodologies</a>.
+        Our program offers students aged 12-18 the opportunity to study alongside Japanese peers, learn the language, 
+        participate in cultural activities, and gain a deeper understanding of Japanese society and traditions.
       </p>
-      <p><strong>Have fun</strong> and let me know if you find any issues or have ideas for improvements!</p>
+      <p><strong>Ready to begin your journey?</strong> <a href="/faq/">Check our FAQ</a> or <a href="/about/">learn more about us</a>!</p>
     </div>
   </article>
 
   <section class="full | region">
     <div class="wrapper flow prose">
-      <h2>{{ blog.title }}</h2>
-      {% if blog.intro %}
-        <p>{{ blog.intro }}</p>
-      {% endif %}
+      <h2>Program Highlights</h2>
       <div class="feature |  region region-space-l">
-        <custom-masonry layout="50-50">
-          {% set itemList = collections.allPosts %}
-					{% asyncEach item in itemList.slice(0, 4) %}
-            {% set headingLevel = "h3" %}
-						{% include "partials/card-blog.njk" %}
-					{% endeach %}
-        </custom-masonry>
+        <div class="grid" style="--grid-min: 20rem;">
+          <div class="flow">
+            <h3>🏫 School Integration</h3>
+            <p>Attend local Japanese schools and study alongside native students in authentic educational settings.</p>
+          </div>
+          <div class="flow">
+            <h3>🏠 Homestay Experience</h3>
+            <p>Live with carefully selected host families who provide a warm, supportive environment for cultural exchange.</p>
+          </div>
+          <div class="flow">
+            <h3>🗾 Cultural Immersion</h3>
+            <p>Participate in traditional Japanese activities, festivals, and cultural events throughout your stay.</p>
+          </div>
+          <div class="flow">
+            <h3>📚 Language Learning</h3>
+            <p>Develop Japanese language skills through daily practice and structured learning opportunities.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
