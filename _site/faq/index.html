@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en"><!-- The order of elements in the head follows recommendations by Harry Roberts. learn more here: https://www.youtube.com/watch?v=MHyAOZ45vnU -->
+<head>
+    <!-- 1 charset/viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2 title -->
+    <title>FAQ</title>
+
+    <base href="/faq/">
+
+    <!-- 3 synchronous js  -->
+    
+<script><!-- inlined for all pages -->
+(()=>{var p=Object.defineProperty;var u=(c,t,e)=>t in c?p(c,t,{enumerable:!0,configurable:!0,writable:!0,value:e}):c[t]=e;var s=(c,t,e)=>u(c,typeof t!="symbol"?t+"":t,e);var r=class r extends HTMLElement{constructor(){super(),this.ready=new Promise(t=>{this.readyResolve=t})}static getParents(t,e=!1){let a=[];for(;t;){if(t.matches&&t.matches(r.tagName)){if(e&&t===e)break;d.hasConditions(t)&&a.push(t)}t=t.parentNode}return a}static async ready(t,e){if(e||(e=r.getParents(t)),e.length===0)return;let a=await Promise.all(e.map(i=>i.wait()));if(a.length)return a[0]}forceFallback(){window.Island&&Object.assign(r.fallback,window.Island.fallback);for(let t in r.fallback){let e=Array.from(this.querySelectorAll(t)).reverse();for(let a of e){if(!a.isConnected)continue;let i=r.getParents(a);if(i.length===1){let o=r.ready(a,i);r.fallback[t](o,a,r.prefix)}}}}wait(){return this.ready}async connectedCallback(){d.hasConditions(this)&&this.forceFallback(),await this.hydrate()}getTemplates(){return this.querySelectorAll(`template[${r.attr.template}]`)}replaceTemplates(t){for(let e of t){if(r.getParents(e,this).length>0)continue;let a=e.getAttribute(r.attr.template);if(a==="replace"){let i=Array.from(this.childNodes);for(let o of i)this.removeChild(o);this.appendChild(e.content);break}else{let i=e.innerHTML;if(a==="once"&&i){if(r.onceCache.has(i)){e.remove();return}r.onceCache.set(i,!0)}e.replaceWith(e.content)}}}async hydrate(){let t=[];this.parentNode&&t.push(r.ready(this.parentNode));let e=d.getConditions(this);for(let a in e)d.map[a]&&t.push(d.map[a](e[a],this));await Promise.all(t),this.replaceTemplates(this.getTemplates());for(let a of r.onReady.values())await a.call(this,r);this.readyResolve(),this.setAttribute(r.attr.ready,""),this.querySelectorAll(`[${r.attr.defer}]`).forEach(a=>a.removeAttribute(r.attr.defer))}};s(r,"tagName","is-land"),s(r,"prefix","is-land--"),s(r,"attr",{template:"data-island",ready:"ready",defer:"defer-hydration"}),s(r,"onceCache",new Map),s(r,"onReady",new Map),s(r,"fallback",{":not(is-land,:defined,[defer-hydration])":(t,e,a)=>{let i=document.createElement(a+e.localName);for(let n of e.getAttributeNames())i.setAttribute(n,e.getAttribute(n));let o=e.shadowRoot;if(!o){let n=e.querySelector(":scope > template:is([shadowrootmode], [shadowroot])");if(n){let m=n.getAttribute("shadowrootmode")||n.getAttribute("shadowroot")||"closed";o=e.attachShadow({mode:m}),o.appendChild(n.content.cloneNode(!0))}}return o&&i.attachShadow({mode:o.mode}).append(...o.childNodes),i.append(...e.childNodes),e.replaceWith(i),t.then(()=>{i.shadowRoot&&e.shadowRoot.append(...i.shadowRoot.childNodes),e.append(...i.childNodes),i.replaceWith(e)})}});var f=r,l=class l{static hasConditions(t){return Object.keys(l.getConditions(t)).length>0}static getConditions(t){let e={};for(let a of Object.keys(l.map))t.hasAttribute(`on:${a}`)&&(e[a]=t.getAttribute(`on:${a}`));return e}static visible(t,e){if("IntersectionObserver"in window)return new Promise(a=>{let i=new IntersectionObserver(o=>{let[n]=o;n.isIntersecting&&(i.unobserve(n.target),a())});i.observe(e)})}static idle(){let t=new Promise(e=>{document.readyState!=="complete"?window.addEventListener("load",()=>e(),{once:!0}):e()});return"requestIdleCallback"in window?Promise.all([new Promise(e=>{requestIdleCallback(()=>{e()})}),t]):t}static interaction(t,e){let a=["click","touchstart"];return t&&(a=(t||"").split(",").map(i=>i.trim())),new Promise(i=>{function o(n){i();for(let m of a)e.removeEventListener(m,o)}for(let n of a)e.addEventListener(n,o,{once:!0})})}static media(t){let e={matches:!0};if(t&&"matchMedia"in window&&(e=window.matchMedia(t)),!e.matches)return new Promise(a=>{e.addListener(i=>{i.matches&&a()})})}static saveData(t){if(!(!("connection"in navigator)||navigator.connection.saveData===(t!=="false")))return new Promise(()=>{})}};s(l,"map",{visible:l.visible,idle:l.idle,interaction:l.interaction,media:l.media,"save-data":l.saveData});var d=l;"customElements"in window&&(window.customElements.define(f.tagName,f),window.Island=f);var y=f.ready;var h=class{};s(h,"attr",{autoInitType:"autoinit",import:"import"}),s(h,"types",{"petite-vue":function(t){t.createApp().mount(this)},vue:function(t){t.createApp().mount(this)},svelte:function(t){new t.default({target:this})},"svelte-ssr":function(t){new t.default({target:this,hydrate:!0})},preact:function(t){t.default(this)}});Island.onReady.set("import-autoinit",async function(c){let t,e=this.getAttribute(h.attr.import);if(e&&(t=await import(e)),t){let a=h.types[this.getAttribute(h.attr.autoInitType)||e];a&&await a.call(this,t)}});})();
+
+(()=>{var a="theme-preference",l={dark:"#f8f8f8",light:"#2e2e2e"},t={value:d()};window.onload=()=>{let e=document.querySelector("#light-theme-toggle"),r=document.querySelector("#dark-theme-toggle");document.querySelector("[data-theme-switcher]")&&(c(),o(),e.addEventListener("click",()=>n("light")),r.addEventListener("click",()=>n("dark")),e.setAttribute("aria-pressed",t.value==="light"),r.setAttribute("aria-pressed",t.value==="dark"))};window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change",({matches:e})=>{t.value=e?"dark":"light",i(),o()});function n(e){t.value=e,document.querySelector("#light-theme-toggle").setAttribute("aria-pressed",e==="light"),document.querySelector("#dark-theme-toggle").setAttribute("aria-pressed",e==="dark"),i(),o()}function d(){return localStorage.getItem(a)?localStorage.getItem(a):window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}function i(){localStorage.setItem(a,t.value),c(),o()}function c(){document.firstElementChild.setAttribute("data-theme",t.value)}function o(){let e=document.querySelector('meta[name="theme-color"]'),r=t.value==="dark"?l.dark:l.light;e.setAttribute("content",r)}c();})();</script>
+
+
+    <!-- 4 schema settings -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "http://localhost:8080#website",
+        "url": "http://localhost:8080",
+        "name": "Japan School Experience",
+        "description": "Immerse yourself in Japanese education and culture through our comprehensive school exchange program.",
+        "inLanguage": "en_EN"
+      }
+    ]
+  }
+</script>
+
+
+
+
+
+    <!-- 5 CSS  -->
+    <!-- <link rel="stylesheet" href="/assets/css/global.css?fd17-43fe-c668" /> -->
+    
+		<!-- External CSS for local dev (refresh without page reload) -->
+		<link rel="stylesheet" href="/bundle/H8SMGntlbZ.css">
+		
+
+	
+
+
+    <!-- 6 preloads  -->
+    <link rel="preload" href="/assets/fonts/redhat/red-hat-display-v7-latin-900.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" href="/assets/fonts/atkinson/atkinson-hyperlegible-regular.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- preloads in page data -->
+
+
+    <!-- 7 defer  -->
+    
+
+
+    <!-- 8 meta tags, icons, open graph etc.  -->
+    
+
+<meta name="description" content="Frequently asked questions about Japan school experience programs.">
+<meta name="theme-color" content="#2e2e2e" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f8f8f8" media="(prefers-color-scheme: light)">
+<!-- Search Engines -->
+<meta name="robots" content="index,follow">
+<meta name="googlebot" content="index,follow">
+<!-- Made with Eleventy! -->
+<meta name="generator" content="Eleventy v3.1.2">
+<!-- Disable automatic detection and formatting of possible phone numbers -->
+<meta name="format-detection" content="telephone=no">
+<!-- supports both dark and light color schemes, page author prefers light as default. -->
+<meta name="color-scheme" content="light dark">
+<!-- activates page transitions -->
+<meta name="view-transition" content="same-origin">
+<!-- Helps prevent duplicate content issues -->
+<link rel="canonical" href="http://localhost:8080/faq/">
+<!-- Links to information about the author(s) of the document -->
+<link rel="author" href="humans.txt">
+
+
+  <!-- Mastodon verified site -->
+  <link rel="me" href="https://front-end.social/@lene">
+
+
+
+  <!-- fediverse creator tag -->
+  <meta name="fediverse:creator" content="@lene@front-end.social">
+
+
+<!-- Open Graph meta  -->
+<meta property="og:url" content="http://localhost:8080/faq/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ">
+<meta property="og:image" content="http://localhost:8080/assets/images/template/opengraph-default.jpg">
+<meta property="og:image:alt" content="Visible content: An Eleventy starter with CUBE CSS, Cube CSS, Every Layout, Design Tokens and Tailwind for uitility classes. A workflow for building modern and resilient websites, introduced by Andy Bell's project buildexcellentwebsit.es">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:description" content="Frequently asked questions about Japan school experience programs.">
+<meta property="og:site_name" content="Japan School Experience">
+<meta property="og:locale" content="en_EN">
+<meta property="article:author" content="Lene Saile">
+
+<!-- Twitter specific head data was removed in v2 -->
+
+<!-- RSS Autodiscovery. Loops over meta.blog.feedLinks -->
+
+  <link rel="alternate" type="application/atom+xml" title="Atom Feed: Japan School Experience" href="/feed.xml">
+
+  <link rel="alternate" type="application/json" title="JSON Feed: Japan School Experience" href="/feed.json">
+
+
+<!-- Favicon: https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+  </head>
+
+  <body class="page">
+    
+    <header class="wrapper">
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <div class="repel ontop gutter-s">
+    <a href="/" class="logo | cluster">
+      <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="#dd4462" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433z" clip-rule="evenodd"></path></svg>
+
+      <span class="font-display">Japan School Experience</span>
+    </a>
+    <!-- toggle drawer and sub menu in _data/meta.js -->
+
+
+
+<nav id="mainnav" aria-label="Main" class="mainnav">
+  <ul role="list" no-flash class="cluster">
+    
+      
+        <li>
+          <a href="/">Home</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/faq/" aria-current="page" data-state="active">FAQ</a>
+        </li>
+      
+    
+      
+        <li>
+          <a href="/about/">About</a>
+        </li>
+      
+    
+  </ul>
+</nav>
+
+
+
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="flow">
+<div style="--region-space-top: var(--space-xl-2xl)" class="region wrapper flow prose">
+  <h1 class="gradient-text">FAQ</h1>
+  <h1 id="frequently-asked-questions"><a href="#frequently-asked-questions" class="heading-anchor">Frequently Asked Questions</a></h1>
+<h2 id="general-questions"><a href="#general-questions" class="heading-anchor">General Questions</a></h2>
+<h3 id="what-is-the-japan-school-experience-program"><a href="#what-is-the-japan-school-experience-program" class="heading-anchor">What is the Japan School Experience program?</a></h3>
+<p>The Japan School Experience program offers students the opportunity to immerse themselves in Japanese education and culture by attending local schools and living with host families.</p>
+<h3 id="who-can-participate"><a href="#who-can-participate" class="heading-anchor">Who can participate?</a></h3>
+<p>Students aged 12-18 from around the world are welcome to participate in our program. Basic English communication skills are required.</p>
+<h3 id="how-long-does-the-program-last"><a href="#how-long-does-the-program-last" class="heading-anchor">How long does the program last?</a></h3>
+<p>We offer programs ranging from 2 weeks to 1 academic year, depending on your preferences and availability.</p>
+<h2 id="application-process"><a href="#application-process" class="heading-anchor">Application Process</a></h2>
+<h3 id="how-do-i-apply"><a href="#how-do-i-apply" class="heading-anchor">How do I apply?</a></h3>
+<p>You can apply online through our website by filling out the application form and submitting the required documents.</p>
+<h3 id="what-documents-do-i-need"><a href="#what-documents-do-i-need" class="heading-anchor">What documents do I need?</a></h3>
+<p>Required documents include:</p>
+<ul>
+<li>Application form</li>
+<li>Academic transcripts</li>
+<li>Letter of recommendation</li>
+<li>Health certificate</li>
+<li>Passport copy</li>
+<li>Motivation letter</li>
+</ul>
+<h3 id="when-is-the-application-deadline"><a href="#when-is-the-application-deadline" class="heading-anchor">When is the application deadline?</a></h3>
+<p>Application deadlines vary by program:</p>
+<ul>
+<li>Summer programs: March 31st</li>
+<li>Semester programs: May 31st (Fall), November 30th (Spring)</li>
+<li>Year-long programs: March 31st</li>
+</ul>
+<h2 id="costs-and-fees"><a href="#costs-and-fees" class="heading-anchor">Costs and Fees</a></h2>
+<h3 id="what-does-the-program-cost"><a href="#what-does-the-program-cost" class="heading-anchor">What does the program cost?</a></h3>
+<p>Program costs vary depending on duration and inclusions. Please contact us for a detailed quote based on your specific needs.</p>
+<h3 id="what-is-included-in-the-program-fee"><a href="#what-is-included-in-the-program-fee" class="heading-anchor">What is included in the program fee?</a></h3>
+<ul>
+<li>School tuition and materials</li>
+<li>Homestay accommodation</li>
+<li>Meals (breakfast and dinner)</li>
+<li>Airport transfers</li>
+<li>Orientation and cultural activities</li>
+<li>24/7 support staff</li>
+</ul>
+<h3 id="are-there-any-additional-costs"><a href="#are-there-any-additional-costs" class="heading-anchor">Are there any additional costs?</a></h3>
+<p>Additional costs may include:</p>
+<ul>
+<li>International flights</li>
+<li>Personal expenses</li>
+<li>Travel insurance</li>
+<li>Pocket money for personal items</li>
+</ul>
+<h2 id="living-arrangements"><a href="#living-arrangements" class="heading-anchor">Living Arrangements</a></h2>
+<h3 id="where-will-i-stay"><a href="#where-will-i-stay" class="heading-anchor">Where will I stay?</a></h3>
+<p>All students stay with carefully selected host families who provide a safe and welcoming environment for cultural exchange.</p>
+<h3 id="what-about-meals"><a href="#what-about-meals" class="heading-anchor">What about meals?</a></h3>
+<p>Host families provide breakfast and dinner. Lunch is typically provided at school or students can bring their own.</p>
+<h3 id="will-i-have-internet-access"><a href="#will-i-have-internet-access" class="heading-anchor">Will I have internet access?</a></h3>
+<p>Most host families provide internet access. You may also consider getting a local SIM card or portable WiFi device.</p>
+<h2 id="academic-life"><a href="#academic-life" class="heading-anchor">Academic Life</a></h2>
+<h3 id="what-subjects-will-i-study"><a href="#what-subjects-will-i-study" class="heading-anchor">What subjects will I study?</a></h3>
+<p>Students typically study core subjects including Japanese language, mathematics, science, social studies, and participate in cultural activities.</p>
+<h3 id="do-i-need-to-know-japanese"><a href="#do-i-need-to-know-japanese" class="heading-anchor">Do I need to know Japanese?</a></h3>
+<p>Basic Japanese is helpful but not required. Language support and classes are provided as part of the program.</p>
+<h3 id="will-my-credits-transfer"><a href="#will-my-credits-transfer" class="heading-anchor">Will my credits transfer?</a></h3>
+<p>Credit transfer depends on your home school’s policies. We provide detailed academic records and work with your school to facilitate credit recognition.</p>
+<h2 id="support-and-safety"><a href="#support-and-safety" class="heading-anchor">Support and Safety</a></h2>
+<h3 id="what-support-is-available"><a href="#what-support-is-available" class="heading-anchor">What support is available?</a></h3>
+<p>We provide 24/7 emergency support, regular check-ins with program coordinators, and access to local support staff.</p>
+<h3 id="how-do-you-ensure-student-safety"><a href="#how-do-you-ensure-student-safety" class="heading-anchor">How do you ensure student safety?</a></h3>
+<p>All host families undergo background checks, we maintain strict safety protocols, and provide comprehensive orientation on Japanese culture and safety practices.</p>
+<h3 id="what-if-i-have-problems-with-my-host-family"><a href="#what-if-i-have-problems-with-my-host-family" class="heading-anchor">What if I have problems with my host family?</a></h3>
+<p>Our support team is available to help resolve any issues. We work closely with host families and students to ensure a positive experience for everyone.</p>
+<h2 id="contact-information"><a href="#contact-information" class="heading-anchor">Contact Information</a></h2>
+<p>For more information or specific questions, please contact us:</p>
+<ul>
+<li>Email: <a href="mailto:info@japanschoolexperience.com">info@japanschoolexperience.com</a></li>
+<li>Phone: +81-3-XXXX-XXXX</li>
+<li>Address: Tokyo, Japan</li>
+</ul>
+
+</div>
+</main>
+
+    <footer class="site-footer mt-l-xl p-s-m">
+  <div class="wrapper">
+    <div class="cluster gutter-xs">
+      <nav aria-label="Complementary" class="cluster text-step-0">
+        © 2025
+        <a href="/"><span class="font-display">Japan School Experience</span> <small>1.0.0</small>
+        </a>
+
+        
+      </nav>
+
+      <nav aria-label="Platforms" class="cluster">
+        <!-- gets the first item from the feed loop set in meta -->
+        <a href="/feed.xml" rel="alternate" type="application/atom+xml">
+          <span class="visually-hidden">Atom Feed</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><title>RSS</title><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
+        </a>
+
+        
+          
+            <!-- regular platforms -->
+            <a href="https://github.com/madrilene/eleventy-excellent" rel="me" class="no-indicator">
+              <span class="visually-hidden">Github</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+            </a>
+          
+        
+          
+            <!-- regular platforms -->
+            <a href="https://front-end.social/@lene" rel="me" class="no-indicator">
+              <span class="visually-hidden">Mastodon</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.887 5.996c-.308-2.314-2.298-4.14-4.655-4.492-.399-.059-1.906-.278-5.398-.278h-.026c-3.495 0-4.243.219-4.642.278-2.295.345-4.387 1.982-4.897 4.326-.242 1.153-.268 2.433-.222 3.606.065 1.684.078 3.361.228 5.039a24 24 0 0 0 .543 3.304c.484 2.009 2.439 3.68 4.355 4.359 2.049.71 4.256.829 6.368.342q.347-.085.69-.193c.513-.165 1.114-.351 1.559-.676q.009-.006.013-.016.006-.01.007-.024v-1.624s0-.013-.007-.02q-.002-.01-.013-.016l-.02-.01h-.019a17.4 17.4 0 0 1-4.132.49c-2.397 0-3.041-1.153-3.224-1.63a5.3 5.3 0 0 1-.281-1.287q0-.01.003-.019.002-.012.013-.017l.02-.01h.023c1.33.325 2.697.491 4.067.491.33 0 .657 0 .987-.01 1.376-.04 2.828-.11 4.184-.378.033-.007.069-.013.098-.02 2.138-.418 4.172-1.724 4.378-5.032.006-.129.026-1.365.026-1.498 0-.461.147-3.258-.023-4.979z"></path><path fill="currentColor" stroke-width="1" d="M6.061 7.288c0-.676.533-1.219 1.193-1.219.661 0 1.193.547 1.193 1.219 0 .673-.532 1.22-1.193 1.22-.66 0-1.193-.547-1.193-1.22Z"></path></svg>
+            </a>
+          
+        
+          
+            <!-- regular platforms -->
+            <a href="https://bsky.app/profile/lenesaile.com" rel="me" class="no-indicator">
+              <span class="visually-hidden">Bluesky</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="var(--color-bg)" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364q.204-.03.415-.056-.207.033-.415.056c-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a9 9 0 0 1-.415-.056q.21.026.415.056c2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"></path></svg>
+            </a>
+          
+        
+          
+            <!-- regular platforms -->
+            <a href="https://ko-fi.com/lenesaile" rel="me" class="no-indicator">
+              <span class="visually-hidden">Kofi</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M18 3h1c1.06 0 2.078.527 2.828 1.464C22.578 5.402 23 6.674 23 8s-.421 2.598-1.172 3.536C21.078 12.473 20.061 13 19 13h-1M1 3h17v12.461c0 1.47-.512 2.878-1.423 3.917-.91 1.038-2.146 1.622-3.434 1.622H5.857c-1.288 0-2.523-.584-3.434-1.622S1 16.93 1 15.46z"></path><path fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M13.288 8.707a2.43 2.43 0 0 0-2.65-.52c-.3.12-.57.3-.8.53l-.34.34-.35-.34a2.43 2.43 0 0 0-3.44 0c-.95.939-1 2.527.2 3.736L9.497 16l3.6-3.547c1.2-1.208 1.14-2.797.19-3.736v-.01Z"></path></svg>
+            </a>
+          
+        
+      </nav>
+    </div>
+
+    <is-land on:idle><div role="region" aria-labelledby="theme-switcher-label" data-theme-switcher style="--cluster-horizontal-alignment: center; --gutter: 0.5rem" class="theme-switch | cluster mt-xs">
+    <h2 id="theme-switcher-label">Theme</h2>
+    <button id="light-theme-toggle" data-theme="light" data-ghost-button data-small-button class="button">
+      <span>light</span>
+    </button>
+    <button id="dark-theme-toggle" data-theme="dark" data-ghost-button data-small-button class="button">
+      <span>dark</span>
+    </button>
+  </div>
+</is-land>
+
+  </div>
+</footer>
+<script type="module" src="/assets/scripts/components/custom-easteregg.js"></script>
+      <custom-easteregg></custom-easteregg>
+
+</body>
+</html>

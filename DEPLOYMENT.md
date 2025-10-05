@@ -33,7 +33,7 @@ git push origin main
 
 In the Cloudflare Pages setup:
 
-**Framework preset:** `None` (or `Eleventy` if available)
+**Framework preset:** `None` (NOT `Eleventy` - this causes wrong output directory)
 
 **Build command:**
 ```bash
@@ -42,8 +42,10 @@ npm run build
 
 **Build output directory:**
 ```bash
-dist
+_site
 ```
+
+**✅ PERFECT:** Your project now uses `_site` as the output directory, which matches Cloudflare's auto-detection for Eleventy projects.
 
 **Root directory:** (leave empty unless your project is in a subfolder)
 
@@ -76,7 +78,7 @@ After deployment:
 Your project is already configured with the correct build settings:
 
 - **Build command:** `npm run build`
-- **Output directory:** `dist`
+- **Output directory:** `_site`
 - **Node.js version:** 20.x (as specified in package.json)
 
 ## File Structure
@@ -86,7 +88,7 @@ The following files are important for deployment:
 - `package.json` - Contains build scripts and dependencies
 - `eleventy.config.js` - Eleventy configuration
 - `src/common/_redirects.njk` - Generates `_redirects` file for Cloudflare Pages routing
-- `dist/` - Output directory (created during build)
+- `_site/` - Output directory (created during build)
 
 ## Troubleshooting
 
