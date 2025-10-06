@@ -84,3 +84,5 @@ Students typically study subjects including mathematics, science, and music. The
 ### Do I need to know Japanese?
 Basic Japanese is helpful but not required. Schools will try to ajust the schedule to have easy-to-participate courses such as mathematics and music etc. to cater to participants.
 
+### Can parents visit the school?
+Yes, we have teamed up with the school to allow parents' visit and observing of the class - a special "School Open House" for our participants.
