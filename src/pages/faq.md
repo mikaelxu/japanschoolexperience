@@ -10,7 +10,7 @@ layout: page
 ## General Questions
 
 ### What is the Japan School Experience program?
-The Japan School Experience program offers students the opportunity to immerse themselves in Japanese education and culture by attending local schools.
+The Japan School Experience program offers students the opportunity to immerse themselves in 100% authentic Japanese education and culture by attending local schools.
 
 ### Who can participate?
 We are accepting Primary 5-6 or Secondary 1-3 students for 2025 to participate in our program. English communication skills are required.
@@ -18,9 +18,12 @@ We are accepting Primary 5-6 or Secondary 1-3 students for 2025 to participate i
 ### How long does the program last?
 For 2025, the program starts on 2 December 2025 (Tuesday) and ends on 5 December 2025 (Friday).
 
-### Is your company a licensed travel agent?
-- We are a marketing collaborating partner of a local Japanese education proivder mowa Solutions Co. Ltd. (URL: https://www.mowaschool.com).
-- mowa has engaged one of the biggest travel agent in Kyushu, Japan to provide the local transport and accommodation package (Kyushu Sanko Tourism Co. Ltd., URL: https://www.kyusanko.co.jp/tourism/)
+### At which school will I study?
+We have collaborated with 2 local Japanese schools for 2025's experience program. Both schools are located in Minami-oguni Town, Kumamoto (熊本県南小国町).
+- Primary/Elementary School: [Minami-oguni Town Ichihara Elementary School](https://es.higo.ed.jp/ichihara/){target="_blank" rel="noopener noreferrer"} (南小国町市原小学校).
+- Secondary/Middle School: [Minami-oguni Junior Middle School](https://jh.higo.ed.jp/moguni/){target="_blank" rel="noopener noreferrer"} (南小国町立南小国中学校).
+
+
 
 ## Application Process
 
@@ -33,13 +36,17 @@ We may need your ID/Passport details for insurance purpose.
 ### When is the application deadline?
 For 2025, application deadline is 31 October 2025.
 
+### Is your company a licensed travel agent?
+- We are a marketing collaborating partner of a local Japanese education proivder [mowa Solutions Co. Ltd.](https://www.mowaschool.com){target="_blank" rel="noopener noreferrer"}.
+- mowa has engaged one of the biggest travel agent in Kyushu, Japan to provide the local transport and accommodation package ([Kyushu Sanko Tourism Co. Ltd.](https://www.kyusanko.co.jp/tourism/){target="_blank" rel="noopener noreferrer"})
+
 ## Costs and Fees
 
 ### What does the program cost?
-Program costs vary depending on duration and inclusions. Please contact us for a detailed quote based on your specific needs.
+Please refer to the home page for detailed itinerary and package price.
 
 ### What is included in the program fee?
-- School experience (attending school together with local Japanese classmates)
+- 100% authentic Japanese School experience (attending school together with local Japanese students)
 - School lunch
 - Other cultural/craft/outdoor activities (Please refer to detailed itinerary)
 - Traditional Onsen Hotel/Ryokan accommodation with dinner and breakfast
@@ -52,7 +59,7 @@ As this is a local program, you are responsible for the following costs:
 - To and from the hotel (we can provide recommended transport options from Fukuoka e.g. bus routes)
 - Pocket money for personal exepnses and items
 
-### How do I make payment for the School Experience Program?
+### How do I make payment?
 - Due to the need to secure hotel and transport reservations, advanced payment is required before the application deadline.
 - You can pay directly to us in Singapore or your can do international payment to the local Japanese education proivder mowa Solutions Co. Ltd.
 - For payment in Singapore, PayNOW UEN: XXXXXX. Company name is Gasprey Pte. Ltd.
@@ -62,40 +69,18 @@ As this is a local program, you are responsible for the following costs:
 ## Living Arrangements
 
 ### Where will I stay?
-Heritage Onsen Hotel/Ryokan called Hizenya located in Minami-oguni Town of Kumamoto (熊本県南小国町)
-URL: https://www.hizenya.co.jp/en/
+Heritage Onsen Hotel/Ryokan called [Hizenya](https://www.hizenya.co.jp/en/){target="_blank" rel="noopener noreferrer"} located in Minami-oguni Town of Kumamoto (熊本県南小国町)
 
 ### What about meals?
-Breakfast and dinner at the hotel are included.
+- Breakfast and dinner at the hotel are included.
+- On school experience days, regular school lunch is also provided.
 
-### Will I have internet access?
-Most host families provide internet access. You may also consider getting a local SIM card or portable WiFi device.
 
 ## Academic Life
 
 ### What subjects will I study?
-Students typically study core subjects including Japanese language, mathematics, science, social studies, and participate in cultural activities.
+Students typically study subjects including mathematics, science, and music. These subjects do not require high-level understanding of Japanese language. Students will also participate in PE/sports lessons, school cleaning and lunch serving, just like any other Japanese students.
 
 ### Do I need to know Japanese?
-Basic Japanese is helpful but not required. Language support and classes are provided as part of the program.
+Basic Japanese is helpful but not required. Schools will try to ajust the schedule to have easy-to-participate courses such as mathematics and music etc. to cater to participants.
 
-### Will my credits transfer?
-Credit transfer depends on your home school's policies. We provide detailed academic records and work with your school to facilitate credit recognition.
-
-## Support and Safety
-
-### What support is available?
-We provide 24/7 emergency support, regular check-ins with program coordinators, and access to local support staff.
-
-### How do you ensure student safety?
-All host families undergo background checks, we maintain strict safety protocols, and provide comprehensive orientation on Japanese culture and safety practices.
-
-### What if I have problems with my host family?
-Our support team is available to help resolve any issues. We work closely with host families and students to ensure a positive experience for everyone.
-
-## Contact Information
-
-For more information or specific questions, please contact us:
-- Email: info@japanschoolexperience.com
-- Phone: +81-3-XXXX-XXXX
-- Address: Tokyo, Japan
