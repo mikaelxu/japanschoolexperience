@@ -40,10 +40,10 @@
 
 
     <!-- 5 CSS  -->
-    <!-- <link rel="stylesheet" href="/assets/css/global.css?ced8-3419-e5e8" /> -->
+    <!-- <link rel="stylesheet" href="/assets/css/global.css?36ca-6629-71db" /> -->
     
 		<!-- External CSS for local dev (refresh without page reload) -->
-		<link rel="stylesheet" href="/bundle/H8SMGntlbZ.css">
+		<link rel="stylesheet" href="/bundle/RwZceANO5K.css">
 		
 
 	
@@ -181,18 +181,72 @@
 
   <article class="full | region">
     <div class="wrapper flow prose">
-      <h2 id="experience-japanese-education">Experience Japanese Education</h2>
+      <h2 id="experience-japanese-education">Ready for the Real Japan?</h2>
       <p>
-        Join our comprehensive school exchange program and immerse yourself in the rich culture and educational system of Japan. 
-        Live with host families, attend local schools, and develop lifelong connections while experiencing authentic Japanese life.
+          Skip the crowded cities and typical tourist paths! Our Japan School Experience offers a deep, authentic cultural exchange unlike any other.
+          For 2025, we are launching our program in the serene, natural countryside of <a href="https://www.town.minamioguni.lg.jp/top.html" target="_blank" rel="noopener noreferrer">Minami-oguni Town, Kumamoto Prefecture (南小国町、熊本県)</a>.
       </p>
       <p>
-        Our program offers students aged 12-18 the opportunity to study alongside Japanese peers, learn the language, 
+        Our program offers students aged 11-15 (Primary 5 to Secondary 3) the opportunity to study alongside Japanese peers in rural Japanese local schools, learn the language, 
         participate in cultural activities, and gain a deeper understanding of Japanese society and traditions.
       </p>
-      <p><strong>Ready to begin your journey?</strong> <a href="/faq/">Check our FAQ</a> or <a href="/about/">learn more about us</a>!</p>
+        <p><strong>Ready to begin your journey?</strong> Refer to the brochure below for details, and <a href="/faq/">Check our FAQ</a>. Or directly sign up using this <a href="https://forms.gle/JRUhVFFzdmY3coEA9" target="_blank" rel="noopener noreferrer">Google Form</a>.</p>
     </div>
   </article>
+
+  <section class="full | region region-space-s">
+    <div class="wrapper flow prose">
+      <div style="--grid-min: 20rem; gap: 2rem" class="grid">
+        <div>
+          <picture><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimages%2Fgallery%2FCover.jpg&amp;width=695&amp;format=webp&amp;via=transform 695w" sizes="auto"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimages%2Fgallery%2FCover.jpg&amp;width=695&amp;format=jpeg&amp;via=transform" alt="Japan School Experience Program Cover" data-fullsrc="../assets/images/gallery/Cover.jpg" width="695" height="900" style="width: 100%; height: auto; border-radius: 8px; transition: opacity 0.2s ease; cursor: pointer" class="clickable-image"></picture>
+        </div>
+        <div>
+          <picture><source type="image/webp" srcset="/.11ty/image/?src=src%2Fassets%2Fimages%2Fgallery%2FPackage.jpg&amp;width=695&amp;format=webp&amp;via=transform 695w" sizes="auto"><img loading="lazy" decoding="async" src="/.11ty/image/?src=src%2Fassets%2Fimages%2Fgallery%2FPackage.jpg&amp;width=695&amp;format=jpeg&amp;via=transform" alt="Japan School Experience Package Details" data-fullsrc="../assets/images/gallery/Package.jpg" width="695" height="900" style="width: 100%; height: auto; border-radius: 8px; transition: opacity 0.2s ease; cursor: pointer" class="clickable-image"></picture>
+        </div>
+      </div>
+
+      <!-- Image Modal -->
+      <div id="imageModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.9); cursor: pointer">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 90%; max-height: 90%">
+          <img id="modalImage" src alt style="width: 100%; height: auto; border-radius: 8px">
+        </div>
+        <div style="position: absolute; top: 20px; right: 35px; color: #fff; font-size: 40px; font-weight: bold; cursor: pointer">×</div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const images = document.querySelectorAll('.clickable-image');
+          const modal = document.getElementById('imageModal');
+          const modalImg = document.getElementById('modalImage');
+          const closeBtn = modal.querySelector('div:last-child');
+
+          images.forEach(function(img) {
+            img.addEventListener('click', function() {
+              modal.style.display = 'block';
+              modalImg.src = this.getAttribute('data-fullsrc');
+              modalImg.alt = this.alt;
+            });
+          });
+
+          closeBtn.addEventListener('click', function() {
+            modal.style.display = 'none';
+          });
+
+          modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+              modal.style.display = 'none';
+            }
+          });
+
+          document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && modal.style.display === 'block') {
+              modal.style.display = 'none';
+            }
+          });
+        });
+      </script>
+    </div>
+  </section>
 
   <section class="full | region">
     <div class="wrapper flow prose">
@@ -200,20 +254,20 @@
       <div class="feature | region region-space-l">
         <div style="--grid-min: 20rem" class="grid">
           <div class="flow">
-            <h3>🏫 School Integration</h3>
+            <h3>🏫 School Experience</h3>
             <p>Attend local Japanese schools and study alongside native students in authentic educational settings.</p>
           </div>
           <div class="flow">
-            <h3>🏠 Homestay Experience</h3>
-            <p>Live with carefully selected host families who provide a warm, supportive environment for cultural exchange.</p>
+            <h3>🏠Comfortable Stay</h3>
+            <p>Traditional Natural Onsen (Hot Spring) hotel accommodation, with dinner and breakfast.</p>
           </div>
           <div class="flow">
             <h3>🗾 Cultural Immersion</h3>
-            <p>Participate in traditional Japanese activities, festivals, and cultural events throughout your stay.</p>
+            <p>Participate in traditional Japanese activities and school events, alongside with local Japanese students.</p>
           </div>
           <div class="flow">
-            <h3>📚 Language Learning</h3>
-            <p>Develop Japanese language skills through daily practice and structured learning opportunities.</p>
+            <h3>📚 Free &amp; Easy Add-on</h3>
+            <p>You are free to make your own additional travel plans before and after the 5-day program.</p>
           </div>
         </div>
       </div>

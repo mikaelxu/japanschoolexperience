@@ -9,47 +9,32 @@ layout: page
 
 ## Our Mission
 
-Japan School Experience is dedicated to fostering international understanding and cultural exchange through authentic educational experiences in Japan. We believe that immersing students in Japanese schools and communities creates lasting friendships, broadens perspectives, and builds bridges between cultures.
+Our Japan School Experience program goes beyond typical sightseeing and shopping trips by offering a deep, authentic cultural exchange in the heart of rural Japan. For 2025 inagural launch, we have specially chosen the authentic, beautiful and rural heart of Japan: Minami-oguni Town, Kumamoto (南小国町、熊本県), this unique program immerses students directly into local schools and community life.
+
+![Location Map showing Minami-oguni Town, Kumamoto](/assets/images/gallery/Map.png) 
 
 ## What We Do
 
-We facilitate comprehensive school exchange programs that allow international students to:
+Through local education provider in Kumamoto Japan, We facilitate a unique school experience program that makes your Japan trip 100% authentic:
 
 - **Study alongside Japanese peers** in local schools
-- **Live with host families** who provide genuine cultural immersion
 - **Participate in traditional activities** and cultural events
-- **Learn Japanese language** through daily practice and structured lessons
+- **Learn Japanese language** Develop interest through real life communications with peers
 - **Develop global perspectives** through cross-cultural friendships
+- **Live with host families** who provide genuine cultural immersion (Depending on group size, we can offer home stay options.)
 
-## Why Choose Us
-
-### Experience and Expertise
-With over a decade of experience in international education, our team understands the unique challenges and opportunities of studying abroad in Japan.
-
-### Carefully Selected Partners
-We work exclusively with accredited Japanese schools and carefully vetted host families who are committed to providing safe, supportive environments.
-
-### Comprehensive Support
-From application to graduation, our dedicated staff provides 24/7 support, regular check-ins, and assistance with any questions or concerns.
-
-### Cultural Integration
-Our programs emphasize authentic cultural experiences, helping students truly understand and appreciate Japanese society, traditions, and values.
-
-## Our Values
-
-- **Cultural Respect**: We honor and celebrate the rich traditions of Japanese culture
-- **Academic Excellence**: We maintain high standards for educational quality and student achievement
-- **Safety First**: Student safety and well-being are our top priorities
-- **Global Citizenship**: We foster understanding and cooperation between people of different cultures
-- **Personal Growth**: We support each student's individual journey of discovery and development
 
 ## Contact Us
+Ready to start your Japanese experience adventure? We'd love to hear from you!
 
-Ready to start your Japanese educational adventure? We'd love to hear from you!
+Gasprey Pte. Ltd. (Singapore marketing partner for Japan School Experience program)
+-**Office**: 441A MacPherson Road, Singapore 368152
+-**WhatsApp/Phone**: +65-87964183 (Ms Choo)
 
-- **Email**: info@japanschoolexperience.com
-- **Phone**: +81-3-XXXX-XXXX
-- **Office**: Tokyo, Japan
+Mowa Solutions Co. Ltd. (Local education program provider in Kumamoto, Japan)
+-**Office**: 729-41, Mori, Ozu Machi, Kikuchi-gun, Japan 869-1217
+-**Phone**: +81-96-2828122
+-**Web**: [mowa Solutions Co. Ltd.](https://www.mowaschool.com){target="_blank" rel="noopener noreferrer"}
 
 Join us in creating meaningful connections and unforgettable experiences that will last a lifetime.
 
