@@ -13,13 +13,13 @@ layout: page
 The Japan School Experience program offers students the opportunity to immerse themselves in 100% authentic Japanese education and culture by attending local schools.
 
 ### Who can participate?
-We are accepting Primary 5-6 or Secondary 1-3 students for 2025 to participate in our program. English communication skills are required.
+We are accepting Primary 5-6 or Secondary 1-3 students for 2026 to participate in our program. English communication skills are required.
 
 ### How long does the program last?
-For 2025, the program starts on 2 December 2025 (Tuesday) and ends on 5 December 2025 (Friday).
+For 2026, currently the available dates are the first 3 weeks of June 2026.
 
 ### At which school will I study?
-We have collaborated with 2 local Japanese schools for 2025's experience program. Both schools are located in Minami-oguni Town, Kumamoto (熊本県南小国町).
+We have collaborated with 2 local Japanese schools for 2025 and 2026's experience program. Both schools are located in Minami-oguni Town, Kumamoto (熊本県南小国町).
 - Primary/Elementary School: [Minami-oguni Town Ichihara Elementary School](https://es.higo.ed.jp/ichihara/){target="_blank" rel="noopener noreferrer"} (南小国町市原小学校).
 - Secondary/Middle School: [Minami-oguni Junior Middle School](https://jh.higo.ed.jp/moguni/){target="_blank" rel="noopener noreferrer"} (南小国町立南小国中学校).
 
@@ -34,7 +34,7 @@ You can fill in the online Google Form and WhatsApp us at +65-87964183 (Ms Choo)
 We may need your ID/Passport details for insurance purpose.
 
 ### When is the application deadline?
-For 2025, application deadline is 31 October 2025.
+For 2026, application deadline is 31 March 2026.
 
 ### Is your company a licensed travel agent?
 - We are a marketing collaborating partner of a local Japanese education provider [mowa Solutions Co. Ltd.](https://www.mowaschool.com){target="_blank" rel="noopener noreferrer"}.
@@ -67,6 +67,7 @@ As this is a local program, you are responsible for the following costs:
 Beneficiary Name: Mowa Solutions Co. Ltd.
 Beneficiary Address: 729-41, Mori, Ozu Machi, Kikuchi-gun, Japan
 Bank Name: THE HIGO BANK LIMITED
+Bank Account: 2094878
 Bank Address: 213-1, Muro,Ozu Machi, Kikuchi-gun, Kumamoto, Japan
 SWIFT Code: HIGOJPJT
 

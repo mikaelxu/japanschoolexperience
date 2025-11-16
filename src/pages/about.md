@@ -9,7 +9,7 @@ layout: page
 
 ## Our Mission
 
-Our Japan School Experience program goes beyond typical sightseeing and shopping trips by offering a deep, authentic cultural exchange in the heart of rural Japan. For 2025 inagural launch, we have specially chosen the authentic, beautiful and rural heart of Japan: Minami-oguni Town, Kumamoto (南小国町、熊本県), this unique program immerses students directly into local schools and community life.
+Our Japan School Experience program goes beyond typical sightseeing and shopping trips by offering a deep, authentic cultural exchange in the heart of rural Japan. For 2025 and 2026, we have specially chosen the authentic, beautiful and rural heart of Japan: Minami-oguni Town, Kumamoto (南小国町、熊本県), this unique program immerses students directly into local schools and community life.
 
 ![Location Map showing Minami-oguni Town, Kumamoto](/assets/images/gallery/Map.png) 
 
