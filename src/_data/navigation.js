@@ -9,6 +9,10 @@ export default {
       url: '/faq/'
     },
     {
+      text: 'Activities',
+      url: '/activities/'
+    },
+    {
       text: 'About',
       url: '/about/'
     }
