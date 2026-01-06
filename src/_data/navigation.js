@@ -13,6 +13,10 @@ export default {
       url: '/activities/'
     },
     {
+      text: 'Pre-school',
+      url: '/pre-school-experience/'
+    },
+    {
       text: 'About',
       url: '/about/'
     }
