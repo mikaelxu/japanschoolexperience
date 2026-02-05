@@ -51,7 +51,7 @@
 
       <url>
         <loc>http://localhost:8080/about/</loc>
-        <lastmod>2025-10-05T05:43:03.669Z</lastmod>
+        <lastmod>2026-02-05T09:23:12.568Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -64,20 +64,7 @@
 
       <url>
         <loc>http://localhost:8080/</loc>
-        <lastmod>2025-10-05T05:43:03.669Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>http://localhost:8080/faq/</loc>
-        <lastmod>2025-10-05T05:49:48.579Z</lastmod>
+        <lastmod>2026-02-05T09:23:12.568Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -90,7 +77,20 @@
 
       <url>
         <loc>http://localhost:8080/activities/</loc>
-        <lastmod>2025-12-24T00:38:30.257Z</lastmod>
+        <lastmod>2026-02-05T09:23:12.569Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>http://localhost:8080/faq/</loc>
+        <lastmod>2026-02-05T09:23:12.569Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -103,7 +103,7 @@
 
       <url>
         <loc>http://localhost:8080/pre-school-experience/</loc>
-        <lastmod>2026-01-06T00:56:14.857Z</lastmod>
+        <lastmod>2026-02-05T09:23:12.570Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     

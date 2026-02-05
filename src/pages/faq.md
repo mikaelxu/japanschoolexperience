@@ -38,29 +38,28 @@ For 2026, application deadline is 31 March 2026.
 
 ### Is your company a licensed travel agent?
 - We are a marketing collaborating partner of a local Japanese education provider [mowa Solutions Co. Ltd.](https://www.mowaschool.com){target="_blank" rel="noopener noreferrer"}.
-- mowa has engaged one of the biggest travel agent in Kyushu, Japan to provide the local transport and accommodation package ([Kyushu Sanko Tourism Co. Ltd.](https://www.kyusanko.co.jp/tourism/){target="_blank" rel="noopener noreferrer"})
+- You are to make your own arrangements for travel and accommodation. You can get in touch with us if you need recommendations.
 
 ## Costs and Fees
 
 ### What does the program cost?
-Please refer to the home page for detailed itinerary and package price.
+Please refer to the home page for detailed itinerary and fees.
 
 ### What is included in the program fee?
 - 100% authentic Japanese School experience (attending school together with local Japanese students)
 - School lunch
 - Other cultural/craft/outdoor activities (Please refer to detailed itinerary)
-- Traditional Onsen Hotel/Ryokan accommodation with dinner and breakfast
 - Daily transport to/from the school or other activities
 - Local support staff
 
 ### Are there any additional costs?
 As this is a local program, you are responsible for the following costs:
-- International flights (we recommended Fukuoka airport)
+- International flights (we recommended Fukuoka airport) and hotel accommodation in Minami-oguni town.
 - To and from the hotel (we can provide recommended transport options from Fukuoka e.g. bus routes)
 - Pocket money for personal expenses and items
 
 ### How do I make payment?
-- Due to the need to secure hotel and transport reservations, advanced payment is required before the application deadline.
+- Due to the need to secure school's time slots and transport reservations, advanced payment is required before the application deadline.
 - You can pay directly to us in Singapore or your can do international payment to the local Japanese education provider mowa Solutions Co. Ltd.
 - For payment in Singapore, PayNOW to Company UEN: 202537808Z. Company name is Gasprey Pte. Ltd.
 - For payment to Japan. Below are the bank details.
@@ -74,11 +73,11 @@ SWIFT Code: HIGOJPJT
 
 ## Living Arrangements
 
-### Where will I stay?
-A Heritage Onsen Hotel/Ryokan called [Hizenya](https://www.hizenya.co.jp/en/){target="_blank" rel="noopener noreferrer"} located in Minami-oguni Town of Kumamoto (熊本県南小国町)
+### Where should I stay?
+We recommend you book and stay at a hotel or ryokan in Minami-oguni Town of Kumamoto (熊本県南小国町)
 
 ### What about meals?
-- Breakfast and dinner at the hotel are included.
+- You are to arrange breakfast and dinner on your own.
 - On school experience days, regular school lunch is also provided.
 
 
